@@ -1,3 +1,5 @@
+/* eslint-disable */   
+/* eslint-disable no-eval */
 import {useState} from 'react';
 
 
@@ -41,11 +43,11 @@ const createDigits =() => {
 }
 
 const calculate = () => {
-  setCalc(eval(calc). toString());
+  setCalc(eval(calc).toString());
 }
 
 const deleteLast = () => {
-  if (calc == ''){
+  if (calc === ''){
     return;
   }
 
